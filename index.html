@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinaiya Ka-feh</title>
+    <link rel="icon" href="img/logo-circle.png" type="image/x-icon">
+    <!-- CSS only Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+    
+    <link rel="stylesheet" href="css/boilerplate.css">
+    <link rel="stylesheet" href="css/index/animation.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index/background.css">
+    <link rel="stylesheet" href="css/index/featured.css">
+    <link rel="stylesheet" href="css/index/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media-rule.css">
+</head>
+<body class="light-background">
+    <script>
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light-mode-background");
+        }
+    </script>
+    <div class="logo-spinner"><img src="img/logo.webp" alt=""></div>
+<div class="main-body">
+    <nav class="navbar navbar-dark navbar-expand-md d-flex justify-content-evenly bg-transparent position-absolute">    
+        <div class="container-fluid">
+            <button class="navbar-dark navbar-toggler text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">            
+                    <ul class="navbar-nav d-flex justify-content-between navbar-container">
+                        <li class="nav-item"><a href="#" class="nav-link focusme">HOME</a></li>
+                        <li class="nav-item"><a href="html/menu.html" class="nav-link">MENU</a></li>
+                        <li class="nav-item"><a href="html/offers.html" class="nav-link">OFFERS</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link light-mode-switch d-flex " onclick="lightmode()">LIGHT MODE</a></li>
+                    </ul>
+                    
+            </div>
+        </div>
+    </nav>
+    <header class="background-container">
+            <div class="logo"></div>
+            <div class="main-background bg-cover light-drop-shadow"></div>
+            <div class="background-text-container">
+                <div class="display-6 font-weight-bold">Welcome to Kinaiyah Ka-feh</div>
+                <div class="header-quote h4">To serve quality coffee and food in a comfortable ambiance and atmosphere</div>                
+            </div>
+    </header>
+
+
+    <div class="featured-design">
+        <div class="featured-line light-box-shadow"></div>
+        <div class="featured-name"><h1 class=" light-drop-shadow">Featured Products</h1></div>
+        <div class="featured-line light-box-shadow"></div>
+    </div>
+    <section class="container light-color">
+        <section class="featured-products">
+            <div class="featured snapping-carousel no-flex-column  with-scroll">
+                <div class="featured-group">
+                    <a class="featured-content" href="html/menu.html">
+                        <img src="img/featured/Cookies & Cream.png" class="img-fluid" alt="">
+                        <p class="featured-product-name light-color">COOKIES & CREAM</p>
+                    </a>
+                    <a class="featured-content mt-5 mb-2" href="html/menu.html">
+                        <img src="img/featured/Hot Choco.png" class="img-fluid" alt="">
+                        <p class="featured-product-name light-color mt-3">HOT CHOCO</p>
+                    </a>
+                    <a class="featured-content" href="html/menu.html">
+                        <img src="img/featured/Iced Choco.png" class="img-fluid" alt="">
+                        <p class="featured-product-name light-color">ICED CHOCO</p>
+                    </a>
+                </div>
+                <div class="featured-group">
+                    <a class="featured-content" href="html/menu.html">
+                        <img src="img/featured/Coffee Jelly.png" class="img-fluid" alt="">
+                        <p class="featured-product-name light-color">COFFEE JELLY</p>
+                    </a>
+                    <a class="featured-content mt-5 mb-2" href="html/menu.html">
+                        <img src="img/featured/Iced White Mocha.png" class="img-fluid" alt="">
+                        <p class="featured-product-name mt-3 light-color">ICED WHITE MOCHA</p>
+                    </a>
+                    <a class="featured-content" href="html/menu.html">
+                        <img src="img/featured/java chip.png" class="img-fluid" alt="">
+                        <p class="featured-product-name light-color">JAVA CHIP</p>
+                    </a>
+                </div>
+                <div class="featured-group">
+                    <a class="featured-content" href="html/menu.html">
+                        <img src="img/featured/vanilla.png" class="img-fluid" alt="">
+                        <p class="featured-product-name light-color">VANILLA</p>
+                    </a>
+                    <a class="featured-content mt-5 mb-2" href="html/menu.html">
+                        <img src="img/featured/mocha.png" class="img-fluid" alt="">
+                        <p class="featured-product-name light-color mt-3">MOCHA</p>
+                    </a>
+                    <a class="featured-content" href="html/menu.html">
+                        <img src="img/featured/choco.png" class="img-fluid" alt="">
+                        <p class="featured-product-name light-color">CHOCO</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <main>
+        <div class="first-content-container">
+            <div class="img-fluid first-image-content image-styling"></div>
+            <div class="container-fluid d-flex h-100 p-3 mx-auto first-content justify-content-center align-items-center media-flex">
+                <div class="first-inner-image d-flex align-items-center fade-in-slide-up">
+                    <img src="img/HOMEPAGE/PIC 1.jpg" class="square-image" alt="">
+                    <img src="img/HOMEPAGE/PIC 2.jpg" class="img-fluid circle-image first-content-circle-image" alt="">
+                </div>
+                <section class=" fade-in-slide-up">
+                    <h2 class="text-center header-border-animation">Kinaiyah Ka-feh</h2>                
+                    <p>[ki-na-i-ya]</p>
+                    <p><i>/Noun/</i></p>
+                    <ol>
+                        <li>An attitude disposition or state of mind.</li>
+                        <li>A distinguishing feature of your personal attitude.</li>
+                        <li>A trait identifying characteristics habit or trend.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="second-content-container d-flex justify-content-center">
+            <div class="img-fluid second-image-content image-styling"></div>
+            <div class="container-fluid d-flex h-100 p-3 mx-auto second-content justify-content-center align-items-center media-flex text-limit">
+                <section class="container fade-in-slide-up">
+                    <h2 class="header-border-animation">A PLACE WHERE YOUR COMFORT 
+                        MATTERS</h1>
+                        <p class="text-justify">Our cafe's main goal is to provide comfort for our costumer. Here, costumer will at home because of the ambiance of the place.  Our shop also hop to the trend which is the minimalistic vibe interior.  This is also a instagrammable place. </p>
+                    </section>
+                    <div class="second-inner-image fade-in-slide-up">
+                        <img src="img/HOMEPAGE/PIC 1.jpg" class="square-image" alt="">
+                    </div>
+            </div>
+        </div>
+
+        <div class="third-content-container d-flex justify-content-center">
+            <div class="img-fluid third-image-content image-styling"></div>
+            <div class="container-fluid d-flex h-100 p-3 mx-auto third-content justify-content-center align-items-center media-flex text-limit">
+                <div class="d-flex flex-row gap-2 fade-in-slide-up">
+                    <div class="third-inner-image">
+                        <img src="img/HOMEPAGE/PIC 4.jpg" class="portrait-image" alt="">
+                    </div>
+                    <div class="third-inner-image">
+                        <img src="img/HOMEPAGE/PIC 5.jpeg" class="landscape-image" alt="">
+                        <img src="img/HOMEPAGE/PIC 6.jpg" class="landscape-image" alt="">
+                    </div>
+                </div>
+                <section class="container fade-in-slide-up">
+                    <h2 class="header-border-animation">PLACE TO CREATE MEMORIES</h2>
+                    <p class="text-justify">You can bring your barkadas, blockmates, familes, and even you girlfriend or boyfriend to have some date or quality time. Our place will serve as your rendezvous.  Our shop is not aesthetically beautiful, You can also read the books in our shelf or play board games. Unlike the other cafe's, we provide a free books and boardgames so that you will not be bored.</p>
+                </section>
+                    
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid py-5 light-footer-background footer">
+        <div class="container footer-main">
+            <div class="title-container">
+                <h2>KINAIYAH KA-FEH</h2>
+                <div class="social">
+                    <a href="https://www.facebook.com/Kinaiyakafeh" target="_blank"><i class="fa fa-facebook light-color-orange" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="more-info">
+                <h4>About us</h4>
+                <ul>
+                    <li><a href="#" class="light-color-orange">Contact(0905 434 2605)</a></li>
+                    <li><a href="https://www.google.com/maps/place/178c+R.+Jabson+Street,+Pasig,+Metro+Manila/@14.5520819,121.0725897,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c8813c153f2b:0xefe0d35377f82287!8m2!3d14.5520819!4d121.0747784" target="_blank" class="light-color-orange">Find us</a></li>
+                    <li><a href="" class="light-color-orange">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="powered">
+                <ul><li>Powered by Notorious Geeks</li></ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/animation.js"></script>
+<script src="js/lightmode.js"></script>
+<script src="js/preload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+body{
+    background-color: #222222;
+    color: white;
+}
+:root{
+    --logo-size: 75px;
+    --circle-image: 100px;
+    --square-image: 200px;
+
+    --portrait-image-width: 125px;
+    --portrait-image-height: 225px;
+
+    --landscape-image-width: 150px;
+    --landscape-image-height: 100px;
+}
+.media-flex{
+    flex-direction: column;
+}
+.first-content-circle-image{
+    position: absolute;
+    bottom: 15%;
+    right: -15%;
+}
+.text-limit{
+    width: 90%;
+}
+.background-container{
+    height: 300px;
+}
+.logo{
+    top:10px;
+}
+.nav-link, .nav-item{
+    background-color: #222222;
+}
+.main-menu-parent{
+    flex-direction: column;
+}
+.menu-img{
+    flex-direction: column;
+    align-items: center;
+}
+.menu-list-parent{
+    text-align: center;
+}
+.menu-link{
+    padding: 0px 0px;
+    font-size: 14px;
+}
+.background-container{
+    height: 300px;
+}
+.logo{
+    top:10px;
+}
+.nav-link, .nav-item{
+    background-color: #222222;
+}
+.menu-list{
+    overflow: hidden;
+}
+.offer-main{
+    flex-direction: column;
+}
+.border-left{
+    border-left: 1px solid black;
+}
+.menu-link:hover {
+    color:white !important;
+    padding: 5px 0px;
+    background-color: #333333;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body{background-color: blue;} */
+    :root{
+        --logo-size: 75px;
+        --circle-image: 125px;
+        --square-image: 275px;
+        
+        --portrait-image-width: 175px;
+        --portrait-image-height: 275px;
+    
+        --landscape-image-width: 275px;
+        --landscape-image-height: 125px;
+
+    }
+    .menu-link:hover {
+        color:white !important;
+        padding: 7px 17px;
+        background-color: #333333;
+    }
+    .media-flex{
+        flex-direction: column;
+    }
+    .first-content-circle-image{
+        position: absolute;
+        bottom: 15%;
+        right: -15%;
+    }
+    .background-container{
+        height: 400px;
+    }
+    .logo{
+        top:50px;
+    }
+    .nav-link, .nav-item{
+        background-color: transparent;
+    }
+    .main-menu-parent{
+        flex-direction: column;
+    }
+    .menu-img{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menu-list-parent{
+        text-align: center;
+    }
+    .menu-link{
+        padding: 0px 0px;
+    }
+    .background-container{
+        height: 400px;
+    }
+    .logo{
+        top:50px;
+    }
+    .nav-link, .nav-item{
+        background-color: transparent;
+    }
+    .menu-list{
+        overflow: visible;
+    }
+    .offer-main{
+        flex-direction: column;
+    }
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* body{background-color: red;} */
+    :root{
+        --logo-size: 75px;
+        --circle-image: 125px;
+        --square-image: 300px;
+
+        --portrait-image-width: 200px;
+        --portrait-image-height: 300px;
+    
+        --landscape-image-width: 300px;
+        --landscape-image-height: 150px;
+    }
+    .media-flex{
+        flex-direction: column;
+    }
+    .first-content-circle-image{
+        position: absolute;
+        bottom: 15%;
+        right: -15%;
+    }
+    .menu-img{
+        flex-direction: row;
+    }
+    .menu-list-parent{
+        text-align: center;
+    }
+    .menu-link{
+        padding: 11px 20px;
+    }
+    .menu-list{
+        overflow: visible;
+    }
+    .offer-main{
+        flex-direction: column;
+    }
+    .menu-link:hover {
+        color:white !important;
+        padding: 11px 20px;
+        background-color: #333333;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* body{background-color: pink;} */
+    :root{
+        --logo-size: 100px;
+        --circle-image: 175px;
+        --square-image: 400px;
+
+        --portrait-image-width: 225px;
+        --portrait-image-height: 350px;
+    
+        --landscape-image-width: 325px;
+        --landscape-image-height: 175px;
+    }
+    .media-flex{
+        flex-direction: row;
+    }
+    .first-content-circle-image{
+        position: absolute;
+        bottom: 5%;
+        right: -10%;
+    }
+    .menu-list-parent{
+        text-align: center;
+    }
+    .menu-link{
+        padding: 11px 20px;
+    }
+    .menu-list{
+        overflow: visible;
+    }
+    .offer-main{
+        flex-direction: row;
+    }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body{background-color: green;} */
+    :root{
+        --logo-size: 100px;
+        --circle-image: 185.5px;
+        --square-image: 485.5px;
+
+        --portrait-image-width: 250px;
+        --portrait-image-height: 400px;
+    
+        --landscape-image-width: 350px;
+        --landscape-image-height: 200px;
+    }
+    .media-flex{
+        flex-direction: row;
+    }
+    .first-content-circle-image{
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+    }
+    .menu-list-parent{
+        flex-direction: column;
+        text-align: right;
+    }
+    .main-menu-parent{
+        flex-direction: row;
+    }
+    .menu-img{
+        flex-direction: row;
+    }
+    .menu-link{
+        padding: 11px 20px;
+    }
+    .menu-list{
+        overflow: visible;
+    }
+    .border-left{
+        border-left: none;
+    }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    /* body{background-color: yellow;} */
+    :root{
+        --logo-size: 100px;
+        --circle-image: 200px;
+        --square-image: 500px;
+
+        --portrait-image-width: 275px;
+        --portrait-image-height: 475px;
+    
+        --landscape-image-width: 375px;
+        --landscape-image-height: 225px;
+    }
+    .media-flex{
+        flex-direction: row;
+    }
+    .first-content-circle-image{
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+    }
+    .text-limit{
+        width: 80%;
+    }
+    .menu-link{
+        padding: 10px 20px;
+    }
+    .menu-list{
+        overflow: visible;
+    }
+}

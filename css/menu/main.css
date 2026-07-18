@@ -1,0 +1,91 @@
+.main-menu-parent{
+    display: flex;
+}
+.menu-img{
+    display: flex;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #333333;
+    justify-content: space-evenly;
+    gap: 30px;
+    transition: .2s;
+}
+
+.card{
+    width: 200px;
+    background-color: #ba7335;
+    transition: .2s;
+}
+.menu-list-parent{    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    overflow-x: scroll;
+}
+.menu-list{
+    margin: 9px 0;
+    width: 100%;
+    min-width: 100px;
+    word-wrap: break-word;
+}
+.menu-link{
+    word-wrap: break-word;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0px 0px;
+    padding-bottom: 11px;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+.menu-link:hover {
+    color:white !important;
+    padding: 10px 20px;
+    background-color: #333333;
+}
+.menu{
+    padding: 0;
+    position: relative;
+}
+.price{
+    position: absolute;        
+    display: flex;
+    align-self: center;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: fade-in-slide-up-no-forwards-reverse .5s forwards ease;
+    transition: .5s;
+}
+.card:hover .price{
+    animation: fade-in-slide-up-no-forwards .5s forwards ease;
+}
+.card:hover img{
+    filter: brightness(30%);
+}
+.card-img-top{
+    transition: .5s;
+}
+.font-price-family{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.horizontal-line{
+    width: 100%;
+    height: 5px;
+    background-color: #ba7335;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+.active-tab {
+    border-bottom: 3px solid #ba7335;
+    font-weight: bold;
+    color: #ba7335 !important;
+}
