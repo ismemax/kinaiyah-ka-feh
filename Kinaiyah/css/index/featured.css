@@ -1,0 +1,94 @@
+.featured-products{
+    margin-top: 20px;
+}
+.featured-design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+}
+.featured-name{
+    margin: 0 30px;
+    white-space: nowrap;
+    color: #ba7335;
+}
+.featured-name > h1{
+    filter: drop-shadow(0 0 1px black) !important;
+    filter: brightness(100%) contrast(100%) !important;
+    font-weight: 500;
+    font-family: 'Great Vibes', cursive;
+}
+.featured-line{
+    width: 100%;
+    height: 5px;
+    background-color: #ba7335;
+    box-shadow: 0 0 5px .1px black;
+}
+.featured{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.featured::-webkit-scrollbar{
+    height: 5px;
+}
+.featured::-webkit-scrollbar-track{
+    background-color: transparent;
+    
+}
+.featured::-webkit-scrollbar-thumb{
+    background-color: #ba7335;
+}
+.featured-group{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    justify-content: center;
+    gap: 20px;
+}
+.featured-content > img{
+    max-width: 300px;
+    min-width: 100px;
+    inline-size: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;    
+    margin: auto;
+}
+.featured-content > p{
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.featured-content{
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.snapping-carousel{
+    scroll-snap-type: inline mandatory;
+}
+
+.snapping-carousel > *{
+    scroll-snap-align: start;
+}
+.featured-content > img{
+    transition:.2s;
+}
+.featured-content > img:hover{
+    transform: scale(1.05, 1.05);    
+    filter: drop-shadow(0 0 10px black);
+}
+.featured-product-name{
+    transition: .2s;
+}
+.featured-content > img:hover ~ .featured-product-name{
+    font-weight: 700;
+    color: whitesmoke;
+}

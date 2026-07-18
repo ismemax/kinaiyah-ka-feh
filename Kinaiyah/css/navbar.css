@@ -1,0 +1,49 @@
+.navbar > ul{
+    letter-spacing: 5px;
+    position: relative;
+}
+.nav-item{
+    position: relative;
+    z-index: 10;
+}
+.nav-link{
+    color: #f7f7f7;
+}
+.navbar-nav{
+    width: 40%;
+}
+.navbar{    
+    width: 100%;
+    z-index: 20;
+}
+.nav-link{
+    padding: 10px 20px;
+    filter: opacity(.9);
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+    border-radius: 5%;
+    white-space: nowrap;
+}
+.nav-link:hover{
+
+    background-color: white;
+    color: black;
+}
+.navbar-toggler{
+    color: white;
+}
+.navbar-collapse{
+    justify-content: center;
+}
+.nav-link:focus-visible{
+    outline: none;
+}
+nav{
+    position: relative;
+    z-index: 10;
+}
+
+.light-mode-switch{
+    
+}

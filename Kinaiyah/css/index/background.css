@@ -1,0 +1,53 @@
+.background-container{
+    position:relative;
+    height: 500px;    
+    display: flex;
+    justify-content: center
+}
+.bg-cover{
+    background-image: url("../../img/HOMEPAGE/MAIN.png");
+    background-size: cover !important;
+    filter: brightness(60%) contrast(110%) drop-shadow(0px 0px 10px black);
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: -2;
+}
+.background-text-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+    position: absolute;
+    z-index:4;
+    text-align: center;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fade-in-slide-up forwards .5s .5s ease;
+}
+.header-quote{
+    text-transform: uppercase;
+    font-style: oblique;
+}
+.header-quote::after, .header-quote::before{
+    content: "\"";
+}
+.logo{
+    background-image: url("../../img/logo.webp");
+    background-size: cover !important;
+    border-radius: 50%;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    position: absolute;
+    z-index: -1;
+    top: 75px;
+    opacity: 0;
+    animation: logo-fade-in .5s .5s forwards ease;
+}
+.background-link{
+    text-decoration: none;
+    color: black;
+    background-color: #BA7335;
+    width: 100px;    
+}
